@@ -1,0 +1,21 @@
+{
+  "name": "jwt-laboratory",
+  "version": "1.0.0",
+  "description": "Comprendiendo la teoria detras de jwt",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jwt"
+  ],
+  "author": "Fredy Cortes",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
