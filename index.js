@@ -74,20 +74,24 @@
 
 const { generateCombinations, generateDictionary } = require('./utils/');
 
-let payload = {
-  0: ['C', 'F', 'M', '3'],
-  1: ['1', '6'],
-  2: ['R', '5', '9'],
-  3: ['W', '4', '7', '8'],
-  4: ['B', 'G', 'N', 'V'],
-  5: ['E', 'Ñ', 'O', 'P'],
-  6: ['H', 'K', 'L', 'U'],
-  7: ['D', 'J', 'T', 'Y'],
-  8: ['A', 'I', 'Q', '0'],
-  9: ['S', 'X', 'Z', '2'],
-};
+//total-37
+// let payload = {
+//   0: ['C', 'F', 'M', '3'],
+//   1: ['1', '6'],
+//   2: ['R', '5', '9'],
+//   3: ['W', '4', '7', '8'],
+//   4: ['B', 'G', 'N', 'V'],
+//   5: ['E', 'Ñ', 'O', 'P'],
+//   6: ['H', 'K', 'L', 'U'],
+//   7: ['D', 'J', 'T', 'Y'],
+//   8: ['A', 'I', 'Q', '0'],
+//   9: ['S', 'X', 'Z', '2'],
+// };
 
-console.time('verifyPassword');
-let combinations = generateCombinations('0928092859', payload);
-console.timeEnd('verifyPassword');
-console.log('combinaciones: ' + combinations.length);
+let payload = generateDictionary();
+console.log(payload);
+
+// console.time('verifyPassword');
+// let combinations = generateCombinations('0928092859', payload);
+// console.timeEnd('verifyPassword');
+// console.log('combinaciones: ' + combinations.length);
