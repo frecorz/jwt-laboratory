@@ -74,7 +74,6 @@
 
 const { generateCombinations, generateDictionary } = require('./utils/');
 
-//total-37
 // let payload = {
 //   0: ['C', 'F', 'M', '3'],
 //   1: ['1', '6'],
@@ -91,7 +90,7 @@ const { generateCombinations, generateDictionary } = require('./utils/');
 let payload = generateDictionary();
 console.log(payload);
 
-// console.time('verifyPassword');
-// let combinations = generateCombinations('0928092859', payload);
-// console.timeEnd('verifyPassword');
-// console.log('combinaciones: ' + combinations.length);
+console.time('verifyPassword');
+let combinations = generateCombinations('0928092859', payload);
+console.timeEnd('verifyPassword');
+console.log('combinaciones: ' + combinations.length);
